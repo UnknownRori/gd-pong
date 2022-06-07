@@ -6,7 +6,7 @@ var   _ball_dir  = 0
 onready var _screen_size_y = get_viewport_rect().size.y
 
 func _ready():
-    if name == "Left":
+    if name == "Red":
         _ball_dir = -1
     else:
         _ball_dir = 1

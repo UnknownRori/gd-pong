@@ -12,5 +12,5 @@ func _ready() -> void:
 
 func _on_Area2D_area_entered(area: Area2D) -> void:
     if area.name == "Ball":
-        area._direction = Vector2(randf() * 2 - 1, _ball_dir).normalized()
+        area._direction.y = _ball_dir
     pass
