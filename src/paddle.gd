@@ -1,6 +1,9 @@
 extends Area2D
 
-var _ball_dir = 0
+const BASE_SPEED = 200
+var   _ball_dir  = 0
+
+onready var _screen_size_y = get_viewport_rect().size.y
 
 func _ready():
     if name == "Left":
@@ -9,6 +12,8 @@ func _ready():
         _ball_dir = 1
 
 func _process(delta):
+    var input = Input.get_action_strength(name + "_down") - Input.get_action_strength(name + "_up")
+    position.y = clamp(position.y + input * BASE_SPEED * delta, 16, _screen_size_y)
     pass
 
 
