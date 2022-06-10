@@ -58,7 +58,6 @@ text = "0"
 align = 1
 
 [connection signal="score" from="Left" to="." method="_on_Left_score"]
-[connection signal="area_entered" from="Right" to="." method="_on_Right_area_entered"]
 [connection signal="score" from="Right" to="." method="_on_Right_score"]
 
 [editable path="Red"]
