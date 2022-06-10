@@ -1,7 +1,7 @@
 extends Area2D
 
-const BASE_SPEED = 200
-var   _ball_dir  = 0
+const BASE_SPEED: int = 200
+var   _ball_dir : int = 0
 
 onready var _screen_size_y = get_viewport_rect().size.y
 

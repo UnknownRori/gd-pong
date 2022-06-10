@@ -1,6 +1,6 @@
 extends Area2D
 
-var index = -1
+var index: int = -1
 signal score
 
 func _on_Area2D_area_entered(area: Area2D) -> void:

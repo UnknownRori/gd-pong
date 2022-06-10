@@ -2,9 +2,9 @@ extends Area2D
 
 onready var _initial_pos = position
 
-const BALL_SPEED  = 200
-var   _speed      = BALL_SPEED
-var   _direction  = Vector2.LEFT
+const BALL_SPEED: int      = 200
+var   _speed    : float    = BALL_SPEED
+var   _direction: Vector2  = Vector2.LEFT
 
 func _process(delta: float) -> void:
     _speed += delta * 2

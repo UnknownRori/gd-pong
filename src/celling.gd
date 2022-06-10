@@ -1,6 +1,6 @@
 extends Area2D
 
-var _ball_dir = 0
+var _ball_dir: int = 0
 
 func _ready() -> void:
     if name == "Top":
